@@ -1,5 +1,53 @@
-body{
+body {
     margin: 0;
     font-family: sans-serif;
-    
+    background-color: #ff8000;
+    color: #fff;
+}
+
+body, header, nav, ul, h1, h2, p, img{
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("ADA13\ Sede_desenfocada.webp");
+    background-size: cover;
+
+    display: flex;
+
+    .header__overlay {
+        height: 100vh;
+        width: 100%;
+        background-color: #f809;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .header__item-container {
+        position: relative;
+        z-index: 10;
+        margin: auto;
+        text-align: center;
+        max-width: 80%;
+
+        .header__img{
+            min-width: 250px;
+            max-width: 40%;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            margin: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.6rem;
+            text-wrap: balance;
+        }
+
+        p{
+            text-wrap: pretty;
+        }
+    }
 }
