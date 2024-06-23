@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box--azul{
+    background-color: blue;
+}
+
+.box--orange{
+    background-color: orange;
+}
+
+.box--roja{
+    background-color: red;
+}
+
+.box--orange-2{
+    background-color: orange;
+}
+
+.box--azul-2{
+    background-color: blue;
+}
+
+.box--roja-2{
+    background-color: red;
+}

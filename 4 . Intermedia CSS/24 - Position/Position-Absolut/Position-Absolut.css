@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    border: 1px solid black;
+    margin: 20px;
+    width: 50%;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box--orange {
+    background-color: orange;
+}
+
+.box--azul {
+    background-color: blue;
+    position: absolute;
+
+    /* la posición abosoluta hace que dicho elemento se salga del flujo de elementos, dejando de 
+    usar el espacio que originalmente de le dio, y dandole la oportunidad de moverse por la pagina. */
+
+    /* 
+    y tomara como referencia la etiqueta HTML para moverse, la cual comienza en la esquina superior izquierda de la pantalla.  */
+
+    
+}
+
+.box--roja {
+    background-color: red;
+}

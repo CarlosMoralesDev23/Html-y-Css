@@ -1,0 +1,19 @@
+img{
+    width: 15%;
+}
+
+img[src="bajo_el_mar.jpg"]{
+    border-radius: 50%;
+    width: 5%;
+}
+
+img[src^="isla"]{
+    border-radius: 25%;
+    height: 100px;
+}
+
+img[src$="png"]{
+    border-radius: 50%;
+    border: 15px solid pink;
+}
+

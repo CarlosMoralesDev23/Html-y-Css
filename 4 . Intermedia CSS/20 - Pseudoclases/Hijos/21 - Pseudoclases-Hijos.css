@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h6 {
+        margin: 30px;
+        font-weight: 100;
+        margin-bottom: 0px;
+        span {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+    }
+    ul {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+}
+
+#lista_1 li {
+    color: brown;
+}
+
+#lista_2 li:first-child {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_3 li:last-child {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_4 li:nth-child(2) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_5 li:nth-child(2n) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_6 li:nth-child(4n) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_7 li:nth-child(2) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_8 li:nth-of-type(2) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lista_9 li:not(.excluir) {
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.vacio:empty{
+    background-color: aqua;
+    border: 5px solid black;
+    margin-bottom: 25px;
+}
+
+.no-vacio{
+    background-color: aqua;
+    border: 5px solid black;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0px;
+}
+
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: red;
+}
+
+#email:invalid{
+    color: red;
+    font-size: 20px;
+    font-family: cursive;
+}

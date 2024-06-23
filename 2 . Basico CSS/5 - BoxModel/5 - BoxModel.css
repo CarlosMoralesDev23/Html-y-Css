@@ -1,0 +1,10 @@
+*{
+    background-color: aqua;
+}
+
+input{
+    width: 70%;
+    box-sizing: border-box;
+    /* box-sizing permite cubrir el espacio dado en los casos de los botones o submit; */
+}
+

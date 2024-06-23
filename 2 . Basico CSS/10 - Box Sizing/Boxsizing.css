@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+
+    .caja{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 10px;
+    }
+
+    .box-default {
+        box-sizing: content-box;
+        padding: 25px;
+        border: 10px solid black;
+
+    }
+
+    .box {
+        box-sizing: border-box;
+        padding: 25px;
+        border: 10px solid black;
+    }
+}

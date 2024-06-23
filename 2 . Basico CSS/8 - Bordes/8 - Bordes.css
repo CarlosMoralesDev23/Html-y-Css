@@ -1,0 +1,82 @@
+body{
+    background-color: aqua;
+    text-align: center;
+
+    h1{
+        font-size: 36px;
+    }
+
+    section{
+    background-color: aquamarine;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+.caja{
+    background-color: coral;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+#caja-1{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+
+    border-radius: 50px;
+    /* cuando border-radius se da en PX se redonde en la esquina-cuadrante. */
+}
+
+#caja-2{
+    border: 5px solid black;
+
+    border-radius: 50%;
+    /* cuando border-radius se da en PX se redondea desde el centro hasta el borde.*/
+}
+
+#caja-3{
+    border: 5px dashed black;
+}
+
+#caja-4{
+    border: 5px double black;
+}
+
+#caja-5{
+    border: 5px dotted black;
+}
+
+#caja-6{
+    border: 5px hidden black;
+}
+
+#caja-7{
+    border: 5px transparent black;
+}
+
+#caja-8{
+    border: 5px solid black;
+}
+
+#caja-9{
+    border-top: 5px solid black;
+}
+
+#caja-10{
+    border: 5px solid black;
+    border-top-left-radius: 20px;
+}
+
+#caja-11{
+    border-top-right-radius: 20px;
+    border: 5px solid black;
+}
+

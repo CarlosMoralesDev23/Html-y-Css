@@ -1,0 +1,25 @@
+h3{
+    font-family: sans-serif;
+    margin: 30px;
+    font-weight: 100;
+
+}
+
+span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#titulo-1:hover{
+    background-color: aqua;
+}
+
+#titulo-2:hover{
+    background-color: black;
+    color: yellow;
+}
+
+#titulo-3:active{
+    background-color: crimson;
+    color: white;
+}

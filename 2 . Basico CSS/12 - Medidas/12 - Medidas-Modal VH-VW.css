@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+    margin: 0;
+}
+
+#notificacion {
+    background-color: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+    font-size: 20px;
+    width: 80vw;
+    height: 80vh;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh;
+
+    h4 {
+        margin: 0;
+        font-size: 23px;
+        /* Es el % de font-size en funcion del font-size de la caja contenedora;  */
+        height: 5vh;
+        width: 100vw;
+    }
+
+    span {
+        color: #999;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    p {
+        color: #555;
+        font-size: 1em;
+        /* p ocupa el 50% de 200px que mideel div padre  */
+    }
+}
+
+/*cm, mm, inch las cosas que van a ser impresas se usan medidas fisicas,  */
+
+/* cm, mm, inch,  para maquetar interfaces tactiles */
+
+/* px, rem, em,   medidas absolutas, se usan para tener control y ser precisos.  */
+
+/* Por porcentaje, son medida con respecto a su contenedor */
+
+/* em es en funcion de la caja contenedora.  */
+
+/* rem es en funcion del elemento RAIZ  HTML  
+1. El font-size que define el navegador 
+2. Definimos html { font-size} 
+3. Si no esta definido en los casos anteriores BUSCARA al elementomas padre en el que sehaya definido font-soze
+**/
+
+/* vmax
+vmin
+
+max va ser el mas grande Height o Width */

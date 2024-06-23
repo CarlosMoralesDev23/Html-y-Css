@@ -1,0 +1,12 @@
+ul li{
+    color: red;
+}
+
+ul strong{
+    color: aqua;
+}
+
+ul>em{
+    color: aquamarine;
+}
+

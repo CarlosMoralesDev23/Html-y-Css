@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+
+}
+
+input{
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    background-color: transparent;
+    color: greenyellow;
+    border-radius: 5px;
+}

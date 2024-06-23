@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="17 - Audio y Video.css" />
+        <title>Audio y Video</title>
+    </head>
+    <body>
+        <h1>Audio y Video</h1>
+
+        <video
+            src="olas_del_mar.mp4"
+            controls
+            muted
+            autoplay
+            loop
+            poster="mar.jpg"
+        >
+            Tu navegador no soporta el video
+        </video>
+
+        <audio controls src="olas_del_mar.mp3"></audio>
+        <!-- 1. autoplay para poder reproducir pero necesita interacción
+
+    2. controls mas autoplay  nos brinda comandos y se reproduce si interactuamos.  
+
+    3. muted + autoplay + controls podemos se reproduce solo pero en silencio. -->
+
+        <!-- 4. loop  para que se repita infinitamente -->
+
+        <video
+            src="olas_del_mar.mp4"
+            controls
+            muted
+            autoplay
+            loop
+            poster="mar.jpg"
+        >
+        <track src="caption.vtt"
+        default kind="captions"
+        srclang="es" label="Español (Latinoamérica)">
+            
+            Tu navegador no soporta el video
+        </video>
+    </body>
+</html>

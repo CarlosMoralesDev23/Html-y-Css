@@ -1,0 +1,53 @@
+.box{
+    position: relative;
+}
+
+/* El valor por defecto de la propiedad position es stattic,
+Y no se puede considerar a un elemento static como un elemento posicionado
+*/
+
+/* Si la propiedad position tiene de valor relative, entonces
+la caja ocupa su espacio original, pero se puede mover por cualquier lado.  */
+
+
+.box--orange{
+    background-color: orange;
+}
+
+.box--azul{
+    top: 40px;
+    bottom: 40px;
+    /* La propiedad top tiene prioridad sobre la propiedad bottom: ; */
+    
+    left: 30px;
+    right: 50px;
+    /* La propiedad left tiene prioridad sobre la propiedad rigth: ; */
+    
+
+    left: 20px;
+}
+
+/* El apilamiento de cajas significa que las cajas se posicionan una encima de otras en la medida en que estas se van añadiendo al sitio */
+
+/* para poder posicionarlas de manera diferente usamos la propiedad Z-INDEX */
+
+.box--roja-2{
+    z-index: 30;
+    left: 70px;
+    bottom: 100px;
+}
+
+
+.box--azul-2{
+    z-index: 20px;
+    left: 50px;
+    top: 20px;
+}
+
+
+.box--orange-2{
+    z-index: 10px;
+    top: 150px;
+    left: 30px;
+}
+

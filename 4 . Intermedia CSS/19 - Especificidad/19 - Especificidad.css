@@ -1,0 +1,21 @@
+#titulo{
+    color: aqua;
+}
+
+.titulo{
+    color: red;
+}
+
+h1{
+    color: blue !important;
+}
+
+
+/*
+ORDEN DE MENOR A MAYOR
+
+1. Navegador
+2. Puglins en el navegador
+3. Archivo css - <style>
+4. stlye directo en el elemento
+5. !Important */

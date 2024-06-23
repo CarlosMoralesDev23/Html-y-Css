@@ -1,0 +1,11 @@
+p{
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+img{
+    width: 50%;
+    margin: auto;
+}

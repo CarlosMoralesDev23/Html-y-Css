@@ -1,0 +1,18 @@
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.box-2{
+    margin-top: 15px;
+}
+
+.box-3{
+    margin-top: 25px;
+}
+
+/* margin colpase, significa que los margines que se enfrentan no se suman, si no que el navegador toma al mayor de ellos. */
+
+/* esto se afecta por el FLEX y GRID */

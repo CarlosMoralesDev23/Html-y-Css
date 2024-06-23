@@ -1,0 +1,70 @@
+/* is */
+
+section .elemento-1,
+section .elemento-2,
+section .elemento-3{
+    color: red;
+}
+
+.elemento-1,
+.elemento-2,
+.elemento-3{
+    color: blue;
+}
+
+:is(.elemento-1, .elemento-2, .elemento-3){
+    color: blueviolet;
+}
+
+section :is(h1,h2,h3,h4,h5,h6){
+    color: rgb(0, 64, 255);
+}
+
+/** Is tiene mayor especificidad que Where */
+
+/* where */
+section :where(.elemento-1, .elemento-2, .elemento-3){
+    color: brown;
+    font-size: 20px;
+}
+
+section:has(.elemento-1){
+    background-color: aqua;
+}
+/* si section tiene como hijo un elemento con la clase .elemento-1 entonces dale ese background-color */
+
+
+ul + div{
+    background-color: tomato;
+}
+/* modifica al DIV que le sigue de hermano a un ul. */
+
+ul:has(+div){
+    background-color: chocolate;
+}
+/* modifica al ul que le continua - sigue un div */
+
+
+
+label{
+    font-weight: bold;
+}
+
+input:valid{
+    color: green;
+}
+
+input:invalid{
+    color: red;
+}
+
+label:has(input:valid){
+    color: green;
+    font-size: 20px;
+}
+
+label:has(input:invalid){
+    color: red;
+    font-size: 20px;
+}
+

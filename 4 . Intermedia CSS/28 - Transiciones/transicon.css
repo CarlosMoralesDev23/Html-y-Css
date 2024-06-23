@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+
+    background-color: #f00;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    transition-property: color, background-color, font-size;
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+    color: blue;
+
+    &:hover {
+        background-color: blue;
+        color: #fff;
+        font-size: 60px;
+    }
+}

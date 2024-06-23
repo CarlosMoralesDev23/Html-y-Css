@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /* ENLACES */
+
+    .enlaces {
+        #enlace-inline {
+            padding: 20px;
+            background-color: #999;
+
+            a {
+                background-color: red;
+                color: white;
+                /* Hasta aca estan en la misma linea,  son IN-LINE */
+            }
+        }
+
+        #enlace-block {
+            padding: 20px;
+            background-color: #999;
+
+            a {
+                background-color: red;
+                color: white;
+                display: block;
+                /* Ahora estan en bloque y se ubican una debajo de la otra, BLOCK */
+            }
+        }
+    }
+
+    /* PARRAFOS - son por defecto block*/ 
+
+    .parrafos {
+        background-color: aquamarine;
+        #parrafo-inline {
+            p {
+                display: inline;
+                background-color: black;
+                color: #fff;
+                margin: 5px;
+                padding: 10px;
+                height: 50px; /*No lo aplica */
+                width: 500px; /*No lo aplica */
+                border: 5px solid darkkhaki;
+
+                margin-bottom: 20px;
+            }
+        }
+
+        #parrafo-block {
+            p {
+                background-color: black;
+                color: #fff;
+                margin: 5px;
+                padding: 10px;
+                height: 50px;
+                width: 500px;
+                margin-bottom: 2px; /*solo para separarlos un toque */
+                border: 5px solid darkkhaki;
+            }
+        }
+    }
+}
+
+/* A los elementos en linea, no los afecta propiedades como padding y margin, a diferencia de los en block.  
+
+Los elementos en linea se adaptan al contenido del elemento, lo podemos ver en los ejemplos dandole los mismos estilos.  */

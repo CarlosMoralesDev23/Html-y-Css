@@ -1,0 +1,32 @@
+body{
+    color: blue;
+}
+
+div {
+    font-family: sans-serif;
+}
+
+div {
+    width: 50%;
+}
+
+h1 {
+    color: inherit;
+    /* inherit se va a copiar del estilo del elemento padre inmediato que tenga definido este estilo,  incluso puede llegar hasta lo ultimo que serian los otorgados por el navegador.  */
+
+    width: inherit;
+}
+
+
+h2{
+    color: initial;
+}
+
+h3{
+    color: yellow;
+    color: unset;
+}
+
+h4{
+    color: revert;
+}

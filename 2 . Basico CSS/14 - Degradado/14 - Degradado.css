@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(59, 186, 186);
+}
+
+.contenedor {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    min-width: 150px;
+    min-height: 150px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-1 {
+    background: linear-gradient(red, green);
+}
+
+.box-2 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-2 {
+        min-width: 350px;
+        min-height: 350px;
+        background: linear-gradient(#0009, transparent);
+        margin: 0;
+        width: 100%;
+
+        h3 {
+            color: white;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-3 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-3 {
+        min-width: 210px;
+        min-height: 275px;
+        background: linear-gradient(transparent, #0009);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-4 {
+    min-width: 450px;
+    min-height: 450px;
+    background-image: url(pikaso_texttoimage_paisaje-realista-de-un-lago-con-arboles-de-muchas-.jpeg);
+
+    .box-in-4 {
+        min-width: 210px;
+        min-height: 275px;
+
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #000;
+        border-radius: 5px;
+
+        h3 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+            background: linear-gradient(transparent, #0009);
+        }
+    }
+}
+
+
+.box-5 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-5 {
+        min-width: 210px;
+        min-height: 275px;
+        background: linear-gradient( to right, transparent, #0009);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3, h4 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-6 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-6 {
+        min-width: 210px;
+        min-height: 275px;
+        background: linear-gradient( to right, transparent, #0009, transparent);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3, h4 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-7 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-7 {
+        min-width: 210px;
+        min-height: 275px;
+        background: linear-gradient( to right, transparent 90%, #0009);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3, h4 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-8 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-8 {
+        min-width: 210px;
+        min-height: 275px;
+        background: radial-gradient( transparent, #0009);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3, h4 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.box-9 {
+    min-width: 350px;
+    min-height: 350px;
+    background-color: red;
+
+    .box-in-9 {
+        min-width: 210px;
+        min-height: 275px;
+        background: conic-gradient( transparent, #0009);
+        margin: 0;
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 30px;
+        border-top: 6px solid #900;
+
+        h3, h4 {
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    }
+}

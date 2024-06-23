@@ -1,0 +1,21 @@
+#parrafo-1{
+    font-family: CarlosFont, sans-serif;
+    font-weight: 300;
+    color: brown;
+}
+
+#parrafo-2{
+    font-family: CarlosFont, sans-serif;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+#parrafo-3{
+    font-family: CarlosFont, sans-serif;
+    font-weight: 700;
+}
+
+#parrafo-4{
+    font-family: CarlosFont, sans-serif;
+    font-weight: 900;
+}

@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* .overlay {
+    background: linear-gradient(to top, #fff, transparent);
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+} */
+
+.contenedor {
+    padding: 400px;
+    background-color: blue;
+    position: relative;
+}
+
+.box {
+    height: 120px;
+    width: 400px;
+    background-color: #f00;
+
+    position: fixed;
+    /* Para fixed noimporta cual sea la position de su contenedor, 
+    siempre seva ubicar en funcion de la panatalla.  */
+
+    /* La caja - elemento se mantendra en su misma posisicón cuando hagamos scroll */
+
+    right: 0;
+
+    background-color: #fff;
+    border: 2px solid #000;
+    border-right: 0;
+    box-shadow: 0 0 40px #0009;
+
+    z-index: 30;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.box-fixed {
+    height: 120px;
+    width: 400px;
+    background-color: #f00;
+    position: sticky;
+    /* Asi se comporta como un relative */
+
+    top: 150px;
+    /* cuando llega altop 50px del borde superior dela pagina se queda fixed. */
+
+    z-index: 40;
+
+
+}

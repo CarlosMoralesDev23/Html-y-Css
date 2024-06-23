@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row;
+    border: 2px solid black;
+    margin: 50px 30px;
+    height: 100px;
+    
+    align-items: center;
+    justify-content: start;
+}
+
+.flex-item {
+    background-color: #400;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+    /* height: 50px; */
+    direction: rtl;
+}
+
+.flex-item:first-child{
+    background-color: #12192b;
+    flex-shrink: 5;
+}
+.flex-item:nth-of-type(2){
+    background-color: #123546;
+    flex-shrink: 1;
+
+}
+.flex-item:nth-of-type(3){
+    background-color: #125566;
+    flex-shrink: 1;
+
+}
+
+/* Flex-Grow permite usar a los elementos hijos de un contenedor, el espacio disponible en el mismo. El espacio se reparte o define entre los valores que se le asignes,  pero si se damos un valor mayor a una de las cajas, el espacio se define a dividirseen función de este.  */
+
+
+
+/* .flex-item:last-child{
+    background-color: #147b89;;
+} */
+/* 1. Para una linea o muchas lineas en el eje principal, justify-content */
+/* 2. para una linea en el eje cruzado aling-item */
+/* 3. para muchas lineas en el eje cruzado aling-content */
+
+.color1 {color: #000319;}
+.color2 {color: #003253;}
+.color3 {color: #00669b;}
+.color4 {color: #00a4ed;}
+.color5 {color: #00eeff;}
+
+.color1 {color: #12192b;}
+.color2 {color: #123546;}
+.color3 {color: #125566;}
+.color4 {color: #147b89;}
+.color5 {color: #17aeab;}

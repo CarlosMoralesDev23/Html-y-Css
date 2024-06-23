@@ -1,0 +1,11 @@
+
+/* Hermano adyacente inmediato */
+h1 + p{
+    color: aquamarine;
+}
+
+/* Todos los hermanos adyacentes */
+h2 ~ p{
+    color: red;
+}
+

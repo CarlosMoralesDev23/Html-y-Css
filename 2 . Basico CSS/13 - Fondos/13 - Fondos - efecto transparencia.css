@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+    height: 150px;
+    margin: 20px;
+    background-color: white;
+    background-image: url(Cartoon-Real-Madrid.jpeg);
+    background-size: cover;
+    background-position: top;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.box-2{
+    width: 100%;
+    height: 150px;
+    margin: 20px;
+    background: url(Cartoon-Real-Madrid.jpeg) top / cover fixed white;
+    margin: 0;
+}
+
+.opaco{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.595);
+}

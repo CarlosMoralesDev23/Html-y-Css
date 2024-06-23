@@ -1,0 +1,22 @@
+/* Selectores */
+
+p{
+    color: blue;
+}
+
+li{
+    color: red;
+}
+
+span{
+    color: black;
+    font-weight: bolder;
+}
+
+.faltante{
+    color: blueviolet;
+}
+
+#ingrediente-secreto{
+    color: rgb(148, 109, 61);
+}

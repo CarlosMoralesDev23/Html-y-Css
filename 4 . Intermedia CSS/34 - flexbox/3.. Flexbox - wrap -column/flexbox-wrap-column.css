@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox, .flexbox-2 {
+    width: 80%;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexbox-2{
+    flex-wrap: nowrap;
+}
+
+.flex-item {
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 120px;
+    direction: rtl;
+}
+
+.flex-item-1 {
+    background-color: #400;
+}
+.flex-item-2 {
+    background-color: #700;
+}
+.flex-item-3 {
+    background-color: #900;
+}
+.flex-item-4 {
+    background-color: #f10;
+}
+.flex-item-5 {
+    background-color: #f15;
+}
+.flex-item-6 {
+    background-color: #f1d;
+}
+.flex-item-7 {
+    background-color: #400;
+}
+.flex-item-8 {
+    background-color: #700;
+}
+.flex-item-9 {
+    background-color: #900;
+}
+.flex-item-10 {
+    background-color: #900;
+}

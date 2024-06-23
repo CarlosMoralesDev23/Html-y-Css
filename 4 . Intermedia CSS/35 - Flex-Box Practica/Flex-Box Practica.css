@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #f80;
+    color: #fff;
+}
+
+div,
+header,
+nav,
+ul,
+h1,
+h2,
+p,
+img {
+    box-sizing: border-box;
+}
+
+/* --- Header Section --- */
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("ADA13\ Sede_desenfocada.webp");
+    background-size: cover;
+    display: flex;
+
+    .header__overlay {
+        height: 100vh;
+        width: 100%;
+        background-color: #f809;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .header__item-container {
+        z-index: 10;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        max-width: 900px;
+
+        img {
+            min-width: 250px;
+            max-width: 40%;
+            /* me pareceque este ultima propiedad no se esta aplicando */
+
+            border-radius: 50%;
+            border: 6px solid #fff;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+            margin: 0;
+            text-wrap: balance;
+            /* crear un equilibrio en el titutlo */
+        }
+
+        p {
+            font-size: 16px;
+            text-wrap: pretty;
+            /* No deja palabras sueltas en la ultima linea */
+        }
+    }
+}
+
+
+/* --- NAVBAR SECTION --- */
+
+.nav{
+    background-color: #fff;
+    
+    .nav__ul{
+        /* es el ul */
+        margin: 0;
+        display: flex;
+
+
+        .nav__item{
+            /* son los li */
+            list-style: none;
+            
+            
+
+            .nav__link{
+                /* son los anchor */
+                color: #f80;
+                text-decoration: none;
+                display: inline-block;
+
+            }
+        }
+    }
+
+
+}

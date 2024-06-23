@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="11 - Data List.css" />
+        <link rel="../8 - Comentarios y Favicon/social.png" type="image/png" />
+        <title>Text Area</title>
+    </head>
+    <body>
+
+        <form>
+            <h2>Formulario de contacto</h2>
+            
+            <!-- SIMPLE INPUTS -->
+            <div class="form_input">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="Jhon Doe" id="nombre" />
+            </div>
+
+
+
+            <!-- SELECT OPTION -->
+            <div class="form_input">
+                <label>Tipo de usuario
+                    <select name="type-of-user">
+                        <option value="user1">Seguidor / a</option>
+                        <option value="user2">Empresa</option>
+                        <option value="user3">Otros</option>
+                    </select>
+                </label>
+            </div class="form_input">
+
+
+
+
+            <!-- DATA OPTION -->
+            <!-- Mostrando value y contenido -->
+            <div class="form_input">
+                <label>Referente
+                    <input list="referente" name="referente">
+                    <datalist id="referente" name="type-of-user">
+                        <option value="user1">Soy Dalto</option>
+                        <option value="user2">Una Empresa</option>
+                        <option value="user3">Amigo</option>
+                    </datalist>
+                </label>
+            </div class="form_input">
+
+
+            <!-- DATA OPTION -->
+            <!-- Mostrando contenido, sin colocar value, automaticamente el contenido pasa a ser el value -->
+            <div class="form_input">
+                <label>Referente
+                    <input list="referente2" name="referente2">
+                    <datalist id="referente2" name="type-of-user">
+                        <option>Soy Dalto</option>
+                        <option>Una Empresa</option>
+                        <option>Amigo</option>
+                    </datalist>
+                </label>
+            </div class="form_input">
+
+            <!-- DATA OPTION -->
+            <!-- Mostrando value, sin colocar contenido, automaticamente el contenido yvalue pasa a ser el value -->
+            <div class="form_input">
+                <label>Referente
+                    <input list="referente3" name="referente3">
+                    <datalist id="referente3" name="type-of-user">
+                        <option value="Soy Dalto"></option>
+                        <option value="Una Empresa"></option>
+                        <option value="Amigo"></option>
+                    </datalist>
+                </label>
+            </div class="form_input">
+
+            <!-- DATA OPTION -->
+            <!-- Mostrando value y description --->
+            <div class="form_input">
+                <label>Referente mejor opción
+                    <input list="referente4" name="referente4">
+                    <datalist id="referente4" name="type-of-user">
+                        <option value="Soy Dalto">Creador de Contenido</option>
+                        <option value="Una Empresa">Compañia del rubro IT</option>
+                        <option value="Amigo">Me recomendo un amigo</option>
+                    </datalist>
+                </label>
+            </div class="form_input">
+            
+            
+
+        </form>
+    </body>
+</html>

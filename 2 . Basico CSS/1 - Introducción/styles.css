@@ -1,0 +1,10 @@
+h2{
+    color: chocolate;
+    font-size: 50px;
+}
+
+p{
+    font-size: larger;
+    color: aqua;
+    /* No cambia el color de losparrafos por que esta definido en el archivo HTML, por esta razon es una mala practica dar estilos en el html */
+}

@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 50px;
+
+    display: flex;
+
+    /* shorcut para forma y distribución */
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    background-color: #400;
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    width: 100px;
+    direction: rtl;
+}
+
+.justify-star{
+    justify-content: start;
+}
+
+.justify-end{
+    justify-content: end;
+}
+.justify-center{
+    justify-content: center;
+    /* juntos al medio y con la misma separación entre ellos */
+}
+.justify-space-betwen{
+    justify-content: space-between;
+    /*uno se ubica al principio del eje y otro al final del eje, y el resto de los elementos se reparten el espacio restante equitativamente */
+}
+.justify-space-around{
+    justify-content: space-around;
+    /* todos los elementos se separan por un margen igual para todos desde el primer costado y al final de ese costado;  y ese margen se suma entre los elementos restantes.*/
+}
+.justify-space-evenly{
+    justify-content: space-evenly;
+    /* todos los elementos se separan por una distancia igual entre todos ellos, incluye los que quedan a los laterales.*/
+}
+

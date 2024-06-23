@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="12 - Fieldset y legend (simple).css" />
+        <link rel="../8 - Comentarios y Favicon/social.png" type="image/png" />
+        <title>12 - Fieldset y legend (simple)</title>
+    </head>
+    <body>
+
+        <form>
+            <h2>Formulario de contacto</h2>
+            
+            <!-- Inicio - Información Personal -->
+
+            <fieldset>
+                <legend>INFORMACIÓN BÁSICA</legend>
+                        <div class="form_input">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" placeholder="Jhon Doe" id="nombre" />
+                    </div>
+
+                    <div class="form_input">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="ejemplo@gmail.com" id="email" />
+                    </div>
+
+                    <div class="form_input">
+                        <label for="asunto">Nombre Completo</label>
+                        <input type="text" placeholder="El asunto de tu mensaje" id="asunto" />
+                    </div>
+            </fieldset>
+
+            <!-- Fin - Información Personal -->
+
+            <!-- SELECT OPTION -->
+            <div class="form_input">
+                <label>Tipo de usuario
+                    <select name="type-of-user">
+                        <option value="user1">Seguidor / a</option>
+                        <option value="user2">Empresa</option>
+                        <option value="user3">Otros</option>
+                    </select>
+                </label>
+            </div class="form_input">
+
+            <!-- DATA OPTION -->
+            <!-- Mostrando value y description --->
+            <div class="form_input">
+                <label>Referente
+                    <input list="referente4" name="referente4">
+                    <datalist id="referente4" name="type-of-user">
+                        <option value="Soy Dalto">Creador de Contenido</option>
+                        <option value="Una Empresa">Compañia del rubro IT</option>
+                        <option value="Amigo">Me recomendo un amigo</option>
+                    </datalist>
+                </label>
+            </div class="form_input">
+
+            <div class="form_input">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" placeholder="Escribi tu mensaje"></textarea>
+            </div>
+            
+            
+
+        </form>
+    </body>
+</html>

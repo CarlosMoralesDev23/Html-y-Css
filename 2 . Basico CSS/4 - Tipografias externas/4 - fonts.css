@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: "CarlosFont";
+    src: url("Fonts/JosefinSans-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "CarlosFont";
+    src: url("Fonts/JosefinSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "CarlosFont";
+    src: url("Fonts/JosefinSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "CarlosFont";
+    src: url("Fonts/JosefinSans-BoldItalic.ttf") format("truetype");
+    font-weight: 900;
+}
+

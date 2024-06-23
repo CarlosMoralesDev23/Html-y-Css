@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    transition-property: left;
+    transition-duration: 1s;
+    position: relative;
+    left: 0;
+}
+
+.box-2 {
+    background-color: #f00;
+    transition-timing-function: ease;
+    color: white;
+}
+
+.box-3 {
+    background-color: blue;
+    color: red;
+    transition-timing-function: ease-in;
+}
+
+.box-4 {
+    background-color: yellow;
+    color: red;
+    transition-timing-function: ease-in-out;
+}
+.box-5 {
+    background-color: lightcoral;
+    color: red;
+    transition-timing-function: ease-out;
+}
+
+.box-6 {
+    background-color: aqua;
+    color: red;
+    transition-timing-function: cubic-bezier(1, -0.01, 0.12, 0.97);
+}
+
+.box-7 {
+    width: 120px;
+    height: 120px;
+    background-color: cadetblue;
+    color: red;
+    transition: left 1s cubic-bezier(1, -0.01, 0.12, 0.97) 2s;
+}
+
+body:hover .box-2 {
+    left: 400px;
+    /* Le doy estitlos a una caja que esta dentro de un body que esta en estado de hover,  para lo cual al Body le doy 100vh */
+}
+body:hover .box-3 {
+    left: 400px;
+}
+body:hover .box-4 {
+    left: 400px;
+}
+body:hover .box-5 {
+    left: 400px;
+}
+body:hover .box-6 {
+    left: 400px;
+}
+
+body:hover .box-7 {
+    left: 400px;
+}
