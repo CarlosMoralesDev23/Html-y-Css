@@ -19,7 +19,7 @@ img {
 /* INICIO DEL HEADER */
 
 .header {
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     background-image: url("ADA13\ Sede_desenfocada.webp");
     background-size: cover;
@@ -27,7 +27,7 @@ img {
     display: flex;
 
     .header__overlay {
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         background-color: #f809;
         position: absolute;
@@ -66,14 +66,22 @@ img {
 .nav {
     background-color: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 6px 100px 6px 40px;
+    padding: 6px 100px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 25px #0009;
 
-    .separador__ul {
+    .nav__ul-container {
+        /* flex-grow: 4; */
+        text-align: center;
         .nav__ul {
+            padding: 0;
             margin: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            flex-wrap: wrap;
 
             .nav__item {
                 list-style: none;
@@ -82,20 +90,50 @@ img {
                     color: #ff8000;
                     text-decoration: none;
                     display: inline-block;
-                    padding: 10px;
+                    padding: 8px 10px;
                     border-radius: 0;
-                    transition: background-color 0.3s, border-radios 0.24s;
+                    transition: background-color 0.24s, border-radios 0.2s,
+                        outline 0.2s, outline-offset 0.2s;
+                    margin: 2px;
 
                     &:hover {
                         background-color: #f803;
                         border-radius: 20px;
+                        outline: 2px solid #f803;
+                        outline-offset: -4px;
+                    }
+                }
+
+                #link--login {
+                    color: white;
+                    background-color: #ff8000;
+                    border-radius: 20px;
+                    padding: 8px 24px;
+                    margin-top: 2.5px;
+
+                    &:hover {
+                        background-color: #f80d;
+                        outline: none;
                     }
                 }
             }
         }
     }
 
-    .nav__logo {
-        width: 70px;
+    .nav__logo-container {
+        /* flex-grow: 1; */
+        .nav__logo {
+            width: 70px;
+            text-align: center;
+        }
     }
+}
+
+main {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 85%;
+    text-align: justify;
+    font-size: 1.7rem;
+    text-wrap: pretty;
 }
