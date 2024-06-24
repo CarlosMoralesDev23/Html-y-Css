@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+.bloques-sin-flexbox {
+
+    width: 100%;
+
+    .bloque {
+        display: inline-block;
+        min-width: 150px;
+        max-width: 200px;
+        background-color: #7bf;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+
+    /* ASI SE DISTRIBUYEN PERO NO CRECEN */
+}
+
+.bloques-con-flexbox {
+
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    /* Permitimos se adapten */
+
+    
+
+
+    
+    .bloque {
+        display: inline-block;
+        min-width: 150px;
+        max-width: 200px;
+        background-color: #7bf;
+        margin: auto;
+        margin-top: 100px;
+
+
+    }
+}
