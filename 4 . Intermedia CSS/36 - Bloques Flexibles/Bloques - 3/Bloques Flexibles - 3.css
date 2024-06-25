@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+
+.bloques-con-flexbox {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    border: 5px solid #7bf;
+    padding: 10px;
+
+    .bloque {
+        display: inline-block;
+        min-width: 200px;
+        /* max-width: 200px; */
+        background-color: #7bf;
+        margin: auto;
+        width: 100%;
+
+/* 
+        flex-grow: 1;
+
+        flex-basis: 0; */
+
+        flex: 1;
+        /* Flex 1 tiene las dos propiedades anteriores.  */
+
+        font-size: 12px;
+        padding: 10px;
+        margin: 4px;
+        /* margin: 4px; */
+        
+    }
+}

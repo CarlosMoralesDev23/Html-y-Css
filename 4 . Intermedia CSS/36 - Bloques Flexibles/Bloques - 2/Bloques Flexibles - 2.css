@@ -9,7 +9,6 @@ body {
 }
 
 .bloques-sin-flexbox {
-
     width: 100%;
 
     .bloque {
@@ -21,30 +20,37 @@ body {
         margin-top: 100px;
     }
 
-
     /* ASI SE DISTRIBUYEN PERO NO CRECEN */
 }
 
 .bloques-con-flexbox {
-
     width: 100%;
     margin-top: 50px;
 
     display: flex;
-    /* Permitimos se adapten */
+    /* Permitimos se adapten, que se achiquen, hasta la medida dada, pero cuando se reduce mucho la resolución se rompe*/
 
-    
+    /* debemos darle flex-wrap */
 
+    flex-wrap: wrap;
 
-    
     .bloque {
         display: inline-block;
         min-width: 150px;
         max-width: 200px;
         background-color: #7bf;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 20px;
+/* 
+        flex-grow: 1;
 
+        flex-basis: 0; */
 
+        flex: 1;
+        /* Flex 1 tiene las dos propiedades anteriores.  */
+
+        font-size: 12px;
+        padding: 20px;
+        
     }
 }
