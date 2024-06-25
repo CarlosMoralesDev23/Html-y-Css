@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+.container {
+
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+
+    video {
+
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 10%;
+    /* este max width permite que la imagen mantenga el 100% de su tamaño, cuando la resolución es mas grande que la imagen, esta no ocupa el 100% de la pantalla, pero si es que la pantalla es mas pequeña, la imagen ocupa el 100% del width de la pantalla. adaptandose*/
+    height: auto;
+}
