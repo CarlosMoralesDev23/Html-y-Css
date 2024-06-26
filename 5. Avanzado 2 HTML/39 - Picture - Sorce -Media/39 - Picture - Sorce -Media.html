@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="39 - Picture - Sorce -Media.css" />
+        <title>39 - Picture - Sorce -Media</title>
+    </head>
+    <body>
+        <picture>
+            <!-- aplicamos esta etiqueta para determinar cual imagen se mostrara dependiendo de la resolución. optimizando los tiempos de carga -->
+
+            <!-- <source srcset="Basket.webp" type="image/webp" /> -->
+            <source media="( max-width: 400px)" srcset="Beisbol-small.jpg" />
+            <source media="( max-width: 600px)" srcset="Futbol-medium.jpg" />
+            <img src="Tenis-big.jpg" alt="" />
+        </picture>
+    </body>
+</html>
