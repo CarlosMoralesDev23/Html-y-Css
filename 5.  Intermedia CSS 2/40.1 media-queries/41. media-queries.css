@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body,
+div {
+    box-sizing: border-box;
+}
+
+/* PARA IMPRIMIR */
+@media print {
+    body {
+        font-size: 20pt;
+    }
+}
+
+/* PARA PANTALLA */
+
+@media screen {
+    body {
+        font-size: 24px;
+        font-style: italic;
+    }
+}
+
+.flexbox {
+    display: flex;
+
+    .flex-item {
+        background-color: #ccc;
+        padding: 30px;
+        border: 1px solid #f00;
+
+        flex-grow: 1;
+    }
+}
+
+/* Con condiciones */
+
+/* Pantalla 500px o menos */
+@media screen and (max-width: 600px) {
+    .flexbox{
+        flex-direction: column;
+    }
+}

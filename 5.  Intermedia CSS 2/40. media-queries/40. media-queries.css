@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: sans-serif
+}
+
+body, div{
+    box-sizing: border-box;
+}
+
+/* PARA IMPRIMIR */
+@media print{
+    body{
+        font-size: 20pt;
+    }
+}
+
+/* PARA PANTALLA */
+
+@media screen{
+    body{
+        font-size: 24px;
+        font-style: italic;
+    }
+}
+
+/* Con condiciones */
+
+
+/* Pantalla 500px o menos */
+@media screen and (max-width: 800px){
+    body{
+        font-weight: bold;
+        background-color: black;
+        color: white;
+    }
+
+}
