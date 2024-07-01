@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ededed;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div,
+body,
+nav,
+ul,
+footer {
+    box-sizing: border-box;
+}
+
+nav a {
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+header,
+.main-wrapper,
+footer {
+    width: 100%;
+
+    h1,
+    h2 {
+        text-wrap: balance;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+}
+
+.header {
+    background-color: #48e;
+
+    .main-navbar {
+        ul {
+            display: flex;
+            justify-content: center;
+            /* Dalto dio margin 4px */
+
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin: 4px;
+
+                a {
+                    color: #fff;
+                    display: inline-block;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+
+    aside,
+    main {
+        padding: 10px 20px;
+        flex-basis: 0;
+        background-color: #fff;
+    }
+
+    .secondary-navbar {
+        min-width: 10rem;
+        text-align: center;
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                a {
+                    color: #48e;
+                    display: inline-block;
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+
+    main {
+        min-width: 18.75rem;
+        text-align: justify;
+        flex-grow: 2;
+    }
+
+    aside {
+        flex-grow: 1;
+    }
+
+    #aside-random {
+        min-width: 10rem;
+        display: none;
+    }
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    .main-wrapper {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    #aside-random {
+        display: block !important;
+    }
+}
