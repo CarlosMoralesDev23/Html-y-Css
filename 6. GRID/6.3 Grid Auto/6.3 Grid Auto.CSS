@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    width: 70%;
+}
+
+.grid{
+
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto 200px 300px;
+    /** AUTO se asegura que todo el contenido destinado a las celdas entren en las dimensiones disponibles, 
+    luego el espacio que sobre lo reparte entre las columnas que se les asigno el AUTO.  */
+
+
+    grid-template-rows:  auto auto;
+    /* La  row se adapta al contenido dentro de la celda y el espacio que sobre se distribuye equitativamente entre las demas rows.  */
+
+
+
+    .grid-item{
+        background-color: #48e;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
