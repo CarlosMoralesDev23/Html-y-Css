@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.grid{
+
+    /* En grid - cuando definimos el alto de la grilla, si las celdas - columnas y filas no son suficientes para ocupar el 100% de ese alto que definimos,  ellas se adaptaran y crearan filas para poder ocupoar ese 100%.  */
+
+    /* EXPLICITO -  Es la grilla que definimos tantas columnas, tantas filas. Entoncas la cantidad de elementos dentro de la grilla ubican sus espacion en función de lo que hayamos definido (explicito) si sobran celdas/no hay suficientes elementos, ese espacio libre se ve, se mantiene,  luego si se quiere se puede ocupar por los elementos que se tienen dentro de la grilla. Expandiendo/uniendo celdas 
+    
+    
+    
+    
+    */
+
+    /* IMPLICITO - Algo debo hacer si SOBRAN Elementos-     Si por el contrario, sobran elementos,  Grid va a crear filas y les va otorgar un tamaño a las mismas; y POR QUE NO SE CREAN COLUMNAS?,  asi es por defecto, se crean filas a menos que se cambie el flujo de grid.  
+    
+                    GRID AUTO ROWS
+
+    Proxima Carpeta
+ */
+
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+
+
+    .grid-item{
+        background-color: #48e;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
