@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+    grid-template-rows: repeat(2,140px) 85px;
+
+    /** Con la siguiente propiedad asigno el alto de las filas que se crean automaticamente.  */
+    grid-auto-rows: 50px;
+
+
+
+    .grid-item{
+        background-color: #48e;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+

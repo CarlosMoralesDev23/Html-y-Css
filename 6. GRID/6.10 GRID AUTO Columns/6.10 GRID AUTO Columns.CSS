@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-template-rows: repeat(2,140px) 85px;
+
+    /** Con las siguientes propiedades asigno  el flujo automatico de columnnas si me sobran elementeos; y doy el ancho de las mismas.*/
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+
+
+
+    .grid-item{
+        background-color: #48e;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+
