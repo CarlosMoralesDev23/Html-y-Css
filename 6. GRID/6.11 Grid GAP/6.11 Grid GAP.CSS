@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+body, div{
+    box-sizing: border-box;
+}
+
+.grid{
+    background-color: #fff;
+
+    /** diseño usado por lo general */
+    background-color: inherit;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: row;
+    grid-auto-columns: 100px;
+    border: 3px solid black;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 20px;
+    padding: 20px;
+
+    /** diseño usado por lo general */
+    padding: 0px;
+    margin-top: 30px;
+
+
+
+
+
+    /* Se recomienda útilizar GAP en vez de margin para separar los elementos con margin, y en caso de ser necesario un padding para separar de los bordes. 
+    Esto hara mas facil que el diseño sea responsive.   */
+
+    /** diseño usado por lo general */
+
+
+
+    .grid-item{
+        background-color: #48e;
+        padding: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
