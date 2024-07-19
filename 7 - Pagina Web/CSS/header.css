@@ -12,7 +12,7 @@
         display: none;
         background-color: #fff;
         position: absolute;
-        height: 100vh;
+        height: 50vh;
         width: 100vw;
         top: 0;
         z-index: -1;
@@ -79,6 +79,7 @@ colores {
     }
 
     #header__nav {
+        display: block;
         position: static;
         height: auto;
         width: auto;

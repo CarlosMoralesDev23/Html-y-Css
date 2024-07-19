@@ -1,0 +1,128 @@
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+
+    .profile__wrapper {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        max-width: 1400px;
+
+        .profile__img-container {
+            max-height: 500px;
+            overflow: hidden;
+
+            .profile__img {
+                max-width: 100%;
+                width: 720px;
+                border-radius: 8px;
+            }
+        }
+
+        .profile__data-container {
+            max-width: 600px;
+
+            .profile__data {
+                .profile__description {
+                    h1 {
+                        color: #26a;
+                    }
+                }
+            }
+
+            .profile__skills-container {
+                h2 {
+                    color: #26a;
+                }
+
+                ul {
+                    color: #26a;
+
+                    .profile__skill {
+                        color: #26a;
+                        list-style: none;
+                        display: flex;
+                        margin: 10px;
+                        align-items: center;
+                        max-width: 600px;
+                        margin-left: 0;
+
+                        .load-bar {
+                            border: 2px solid #48e;
+                            border-radius: 8px;
+                            padding: 2px;
+                            font-size: 12px;
+                            width: 80%;
+                            margin: 4px;
+                            margin-left: 0;
+
+                            .load-bar__bar {
+                                color: #fff;
+                                background-color: #48e;
+                                border-radius: 4px;
+                                padding: 4px 6px;
+                            }
+
+                            .bar--80 {
+                                width: 80%;
+                            }
+                            .bar--60 {
+                                width: 60%;
+                            }
+                            .bar--70 {
+                                width: 70%;
+                            }
+                            .bar--65 {
+                                width: 65%;
+                            }
+                            .bar--75 {
+                                width: 75%;
+                            }
+                        }
+
+                        .profile__skill-name {
+                            color: #48e;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@container profile (min-width:720px) {
+    .profile {
+        .profile__wrapper {
+            flex-direction: row;
+            background-color: transparent;
+
+            .profile__img-container{
+                .profile__img{
+                    height: 100%;
+                    object-fit: cover;
+                    width: 620px;
+                }
+            }
+
+            .profile__data-container{
+                background-color: #fff;
+                padding: 20px;
+
+                .profile__data{
+                    max-width: 620px;
+
+                    h1{
+                        margin-top: 0px;
+    
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* 17:30:37 */
