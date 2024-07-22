@@ -98,8 +98,16 @@
         .profile__wrapper {
             flex-direction: row;
             background-color: transparent;
+            padding: 20px;
+            height: 95vh;
+            margin: auto;
+            padding-top: 10px;
 
             .profile__img-container{
+
+                max-height: initial;
+                border-radius: 25px 0px 0px 25px;
+                
                 .profile__img{
                     height: 100%;
                     object-fit: cover;
@@ -110,12 +118,17 @@
             .profile__data-container{
                 background-color: #fff;
                 padding: 20px;
+                border-radius: 0px 25px 25px 0px;
+                box-shadow: 0px 0px 9px #0002;
 
                 .profile__data{
                     max-width: 620px;
 
                     h1{
                         margin-top: 0px;
+                        text-wrap: balance;
+                        font-size: 2.5rem;
+                        margin-bottom: 0;
     
                     }
                 }
@@ -125,4 +138,4 @@
     }
 }
 
-/* 17:30:37 */
+/* 17:35:37 */
