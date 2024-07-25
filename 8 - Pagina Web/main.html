@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header class="header">
-        <input type="checkbox" id="open-menu" class="header__checkbox">
-        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/main.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <input type="checkbox" id="open-menu" class="header__checkbox" />
+            <label for="open-menu" class="header__open-nav-button" role="button"
+                >=</label
+            >
 
-        <div class="header__logo-container">
-            <img src="img/ADA-200-400.png" alt="" class="header__logo">
-        </div>
+            <div class="header__logo-container">
+                <img src="img/ADA-200-400.png" alt="" class="header__logo" />
+            </div>
 
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#">About</a></li>
-                <li class="header__nav-item"><a href="#">Portfolio</a></li>
-                <li class="header__nav-item"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-</body>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                    <li class="header__nav-item"><a href="#">Portfolio</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="profile">
+            <div class="profile__wrapper">
+
+                <div class="profile__img-container">
+                    <img src="img/carlos-morales512.png" alt="" class="profile__img"/>
+                </div>
+
+                <div class="profile__data-container">
+                    <div class="profile__data">
+                        <div class="profile__description">
+                            <h1>¿Quien es Carlos Morales?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quaerat, dolores reprehenderit modi officiis id culpa nam. Natus praesentium tempore facilis incidunt aspernatur nisi voluptatibus temporibus veniam. Ratione, aut quae.</p>
+                        </div>
+                        <div class="profile__skills-container">
+                            <h2>SKILLS
+                            <ul>
+                                <li class="profile_skill">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--50">50%</div>
+                                    </div>
+                                    <span class="profile__skill-name">JS</span>
+                                </li>
+                                <li class="profile_skill">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--50">50%</div>
+                                    </div>
+                                    <span class="profile__skill-name">SQL</span>
+                                </li>
+                                <li class="profile_skill">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--65">65%</div>
+                                    </div>
+                                    <span class="profile__skill-name">CSS</span>
+                                </li>
+                                <li class="profile_skill">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--80">80%</div>
+                                    </div>
+                                    <span class="profile__skill-name">HTML</span>
+                                </li>
+                            </ul>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

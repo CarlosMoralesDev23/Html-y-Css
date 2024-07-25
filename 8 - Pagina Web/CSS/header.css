@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    container-type: inline-size;
+    container-name: header;
 
     .header__checkbox {
         display: none;
@@ -64,3 +66,28 @@
 }
 
 /* --- Header Queries --- */
+@container header (min-width: 600px) {
+    .header {
+
+        .header__open-nav-button{
+            display: none;
+        }
+
+        .header__nav {
+            display: block;
+            position: static;
+            height: auto;
+            width: auto;
+            justify-content: space-between;
+
+            .header__nav-list {
+                flex-direction: row;
+                gap: 20px;
+                height: auto;
+                margin-right: 40px;
+            }
+        }
+
+
+    }
+}

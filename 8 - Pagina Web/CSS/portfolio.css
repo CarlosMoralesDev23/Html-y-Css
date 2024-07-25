@@ -1,0 +1,132 @@
+.profile {
+    container-type: inline-size;
+    container-name: profile;
+    .profile__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        max-width: 1400px;
+
+        .profile_img {
+            max-width: 100%;
+        }
+    }
+}
+
+.profile {
+    .profile__img-container {
+        max-height: 500px;
+        overflow: hidden;
+
+        .profile__img {
+            max-width: 100%;
+            width: 720px;
+        }
+    }
+}
+
+.profile {
+    .profile__data-container {
+        max-width: 600px;
+        padding: 12px;
+
+        .profile__data {
+            h1 {
+                color: #26a;
+            }
+        }
+    }
+}
+
+.profile {
+    .profile__skills-container {
+        h2 {
+            color: #26a;
+        }
+
+        ul {
+            .profile_skill {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                max-width: 600px;
+                margin-left: 0;
+
+                .load-bar {
+                    border: 2px solid #48e;
+                    border-radius: 8px;
+                    color: #fff;
+                    padding: 2px;
+                    font-size: 12px;
+                    width: 80%;
+                    margin: 4px;
+                    margin-left: 0;
+
+                    .load-bar__bar {
+                        background-color: #48e;
+                        border-radius: 4px;
+                        padding: 4px 6px;
+                    }
+
+                    .bar--50 {
+                        width: 50%;
+                    }
+                    .bar--65 {
+                        width: 65%;
+                    }
+                    .bar--80 {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .profile_skill-name{
+            color: #48e;
+        }
+    }
+}
+
+
+@container profile (min-width: 720px){
+
+    .profile{
+        .profile__wrapper{
+            flex-direction: row;
+            padding: 20px;
+            background-color: transparent;
+        }
+        
+    }
+
+
+    .profile {
+        .profile__img-container {
+
+
+            .profile__img {
+                height: 100%;
+                object-fit: cover;
+                width: 620px;
+
+            }
+        }
+    }
+
+
+    .profile__data-container {
+        background-color: #fff;
+
+        .profile__data {
+            max-width: 620px;
+
+
+            h1 {
+                color: #26a;
+            }
+        }
+    }
+}
+
