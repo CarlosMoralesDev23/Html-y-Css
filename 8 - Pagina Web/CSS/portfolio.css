@@ -97,6 +97,8 @@
             flex-direction: row;
             padding: 20px;
             background-color: transparent;
+            height: 90vh;
+            margin: auto;
         }
         
     }
@@ -104,6 +106,8 @@
 
     .profile {
         .profile__img-container {
+            max-height: initial;
+            border-radius: 25px 0px 0px 25px;
 
 
             .profile__img {
@@ -118,6 +122,12 @@
 
     .profile__data-container {
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 25px 25px 0px;
+        box-shadow: 0px 0px 9px #0002;
+
+
 
         .profile__data {
             max-width: 620px;
@@ -125,7 +135,16 @@
 
             h1 {
                 color: #26a;
+                margin-top: 0px;
+                font-size: 2.74rem;
+                text-wrap: balance;
             }
+        }
+    }
+
+    .profile__skills-container{
+        h2{
+            margin: 0;
         }
     }
 }
