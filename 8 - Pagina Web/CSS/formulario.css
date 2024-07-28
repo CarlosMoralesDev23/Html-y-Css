@@ -1,5 +1,7 @@
 .form {
-    min-height: 70vh;
+    min-height: 75vh;
+    max-width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,23 +10,31 @@
 
     container-name: formulario;
     container-type: inline-size;
+
+    .form__title {
+        font-size: 2.5rem;
+    }
 }
 
 .form__form {
     padding: 12px;
     max-width: 600px;
     width: 100%;
+    display: grid;
+    gap: 14px;
+    margin-bottom: 30px;
 }
 
 /* Dandole los mismos estilos a los inputs de tipo diferentes.  */
 .form__input-container :is(input, textarea) {
     width: 100%;
-    padding: 9px 6px;
+    padding: 9px;
     font-size: 16px;
     margin: 4px;
     border: none;
     box-shadow: 2px 2px 4px #0005;
     border-radius: 6px;
+    background-color: #fffd;
 }
 
 .form__input-container textarea {
@@ -44,15 +54,59 @@
     }
 }
 
-.form__input-container {
+/* .form__input-container {
     margin-top: 8px;
-}
+} */
 
 label {
     margin-left: 5px;
 }
 
+@container formulario (min-width: 56.25rem ) {
+    .form {
+        max-width: 100%;
+    }
 
-@container formulario (min-width: 56.25rem ){
+    .form__form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name lastname"
+            "email email"
+            "message message"
+            "button button";
 
+        gap: 12px;
+
+        background-image: radial-gradient(#18233f06, #18233f22);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 40px #0006;
+    }
+
+    .form__input-container {
+        &:first-child {
+            grid-area: name;
+        }
+
+        &:nth-child(2) {
+            grid-area: lastname;
+        }
+
+        &:nth-child(3) {
+            grid-area: name;
+        }
+
+        &:nth-child(4) {
+            grid-area: message;
+        }
+
+        &:last-child {
+            grid-area: button;
+        }
+    }
+
+    /* .form__input-container :is(input, textarea) {
+        box-shadow: none;
+        border-radius: 4px;
+    } */
 }
