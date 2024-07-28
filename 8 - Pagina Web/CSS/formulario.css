@@ -1,0 +1,58 @@
+.form {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    container-name: formulario;
+    container-type: inline-size;
+}
+
+.form__form {
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Dandole los mismos estilos a los inputs de tipo diferentes.  */
+.form__input-container :is(input, textarea) {
+    width: 100%;
+    padding: 9px 6px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px #0005;
+    border-radius: 6px;
+}
+
+.form__input-container textarea {
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+    margin-bottom: 0px;
+}
+
+.form__input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form__input-container {
+    margin-top: 8px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+
+@container formulario (min-width: 56.25rem ){
+
+}
