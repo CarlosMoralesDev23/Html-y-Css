@@ -1,0 +1,58 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+
+
+/* --- Linear --- */
+.box-1 {
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+
+    .barra {
+        padding: 40px;
+        background-color: #48e;
+        border-radius: 30px;
+        width: 10%;
+        transition: width 1s linear;
+
+        &:active {
+            width: 100%;
+            /* Tiempo de volver */
+            transition-duration: 2s;
+        }
+    }
+}
+
+
+
+/* --- Steps --- */
+.box-2 {
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid rgb(68, 207, 238);
+    padding: 6px;
+    border-radius: 39px;
+
+    .barra {
+        padding: 40px;
+        background-color: rgb(68, 207, 238);
+        border-radius: 30px;
+        width: 10%;
+        transition: width 1s steps(5);
+
+        &:active {
+            width: 100%;
+            transition-duration: 2s;
+        }
+    }
+}
